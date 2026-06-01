@@ -134,7 +134,7 @@ async (req, res) => {
         email: user.email,
       },
 
-      "nanu",
+      process.env.JWT_SECRET,
 
       {
         expiresIn: "1h",
