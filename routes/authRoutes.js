@@ -33,7 +33,8 @@ router.get(
   (req, res) => {
 
     res.json({
-      user: req.user,
+      name: req.user.name ,
+      email:req.user.email,
     });
 
   }
